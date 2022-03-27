@@ -1,0 +1,191 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
+@font-face{
+    font-family: 'Android';
+    src: url('../fontes/idroid.otf') format('opentype');
+    font-weight: normal;
+}
+
+:root{
+    --cor0: bisque;
+    --cor1: white;
+    --cor2: aliceblue;
+    --cor3: #3198E2;
+    --cor4: #180e3d;
+    --cor5: rgb(217, 230, 36);
+    --cor6: #38b0e7;
+    --cor7: #000000;
+    --cor8: hsl(216, 58%, 33%);
+
+    --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
+    --fonte-destaque: 'Bebas Neue', cursive;
+    --fonte-android: 'Android', cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--cor0);
+    font-family: var(--fonte-padrao);
+}
+
+a.externo::after{
+    content: '\00A0\1F517';
+}
+
+header{
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    min-height: 150px;
+    text-align: center;
+}
+
+header h1{
+    color: var(--cor1);
+    text-align: center;
+    font-family: var(--fonte-destaque);
+    padding-top: 20px;
+    margin-bottom: 20px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.637);
+}
+
+header p{
+    text-align: center;
+    color: var(--cor2);
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 1.2em;
+    max-width: 600px;
+    margin: auto;
+    padding: 10px 0 0 10px;
+    text-shadow: 3px 3px 0px rgba(0, 0, 0, 0.637);
+}
+
+nav > li{
+    display: inline-block;
+    margin: 30px 10px 10px 30px;
+}
+li > a{
+    display: inline-block;
+    color: var(--cor1);
+    text-decoration: none;
+}
+a:hover{
+    color: var(--cor5);
+}
+
+div.video{
+    background-color: #180e3d;
+    margin: 20px;
+    padding: 20px;
+    
+    padding-bottom: 40%;
+    position: relative;
+}
+div.video > iframe{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    width: 90%;
+    height: 90%;
+
+}
+
+main{
+    background-color: var(--cor1);
+    min-width: 380px;
+    max-width: 1000px;
+    padding: 20px;
+    margin: auto;   
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.733); 
+}
+main h1{
+    max-width: 1000px;
+    min-width: 300px;
+    margin: auto;
+}
+
+main p{
+    margin: 15px 0;
+    text-indent: 30px;
+    text-align: justify;
+    font-size: 1em;
+    line-height: 1.3em;
+}
+
+main strong{
+    color: var(--cor3);
+    font-weight: bold;
+    padding: 2px 6px;
+}
+
+main img{
+    width: 100%;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block;
+    margin: auto;
+}
+
+main a{
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bolder;
+    background-color: var(--cor8);
+    padding: 2px 6px;
+}
+main a:hover{
+    text-decoration: underline;
+    background-color: var(--cor6);
+}
+
+section{
+    background-color: var(--cor1);
+}
+article > h1{
+    color: var(--cor8);
+    font-family: var(--fonte-android);
+}
+
+article h2{
+    color: var(--cor7);
+    font-family: var(--fonte-android);
+    background: linear-gradient(to right, var(--cor0), Transparent);
+    padding: 10px;
+    border-radius: 15px 0 0 15px;
+   /*Falta ainda nome História do Mascote do Android*/ 
+}
+aside h3{
+    background-color: var(--cor3);
+    padding: 10px;
+    margin: -10px -10px 0 -10px;
+    border-radius: 10px 10px 0 0;
+}
+
+aside{
+    background-image: linear-gradient(to bottom, var(--cor0), Transparent);
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.596);
+}
+aside > ul{
+    list-style-type: '\2714\00A0\00A0';
+    list-style-position: inside;
+    columns: 2;
+}
+
+/*Footer pronto*/
+footer{
+    height: 40px;
+    background-image: linear-gradient(to bottom, var(--cor3), var(--cor4));
+    color: var(--cor1);
+    text-align: center;
+    margin-bottom: 2px;
+}
+footer p{
+    padding: 10px 0 10px 0;
+}
