@@ -65,7 +65,7 @@ header p{
 
 nav > li{
     display: inline-block;
-    margin: 30px 10px 10px 30px;
+    margin: 30px;
 }
 li > a{
     display: inline-block;
